@@ -36,7 +36,6 @@ struct graph_node
     std::vector<std::shared_ptr<graph_node>> nexts;
     std::vector<std::shared_ptr<graph_edge>> edges;
 
-    graph_node() = default;
     graph_node(int value) : value(value), in(0), out(0){}
 
     bool operator==(const graph_node& other);
